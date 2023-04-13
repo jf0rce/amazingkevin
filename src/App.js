@@ -9,11 +9,11 @@ import Marquee from 'react-fast-marquee';
 function App() {
   return (
     <Marquee style={{height: '100vh'}}>
-      <img src={kevin1} style={{height: '80vh', marginLeft: 30, marginRight: 30}}/>
-      <img src={kevin2} style={{height: '80vh', marginLeft: 30, marginRight: 30}}/>
-      <img src={kevin3} style={{height: '80vh', marginLeft: 30, marginRight: 30}}/>
-      <img src={kevin4} style={{height: '80vh', marginLeft: 30, marginRight: 30}}/>
-      <img src={kevin5} style={{height: '80vh', marginLeft: 30, marginRight: 30}}/>
+      <img src={require('./assets/kevin1.jpg')} style={{height: '50vh', marginLeft: 30, marginRight: 30}}/>
+      <img src={require('./assets/kevin2.jpg')} style={{height: '50vh', marginLeft: 30, marginRight: 30}}/>
+      <img src={require('./assets/kevin3.jpg')} style={{height: '50vh', marginLeft: 30, marginRight: 30}}/>
+      <img src={require('./assets/kevin4.jpg')} style={{height: '50vh', marginLeft: 30, marginRight: 30}}/>
+      <img src={require('./assets/kevin5.jpg')} style={{height: '50vh', marginLeft: 30, marginRight: 30}}/>
     </Marquee>
   );
 }

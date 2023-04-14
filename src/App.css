@@ -62,8 +62,8 @@ section {
 
 @-webkit-keyframes swipe {
   0% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
   }
 
   100% {

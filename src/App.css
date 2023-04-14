@@ -34,6 +34,7 @@ section {
   display: flex;
   animation: swipe 25500ms linear infinite backwards;
   -webkit-animation: swipe 25500ms linear infinite backwards;
+  -moz-animation: swipe 25500ms linear infinite backwards;
 
   animation-name: swipe;
   animation-duration: 25500ms;
@@ -46,17 +47,25 @@ section {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: backwards;
+
+  -moz-animation-name: swipe;
+  -moz-animation-duration: 25500ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: backwards;
 }
 
 @keyframes swipe {
   0% {
     transform: translate(0);
     -webkit-transform: translate(0);
+    -moz-transform: translate(0);
   }
 
   100% {
     transform: translate(-100%);
     -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
   }
 }
 
@@ -64,10 +73,26 @@ section {
   0% {
     transform: translate(0%);
     -webkit-transform: translate(0%);
+    -moz-transform: translate(0);
   }
 
   100% {
     transform: translate(-100%);
     -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
+  }
+}
+
+@-moz-keyframes swipe {
+  0% {
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -moz-transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+    -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
   }
 }

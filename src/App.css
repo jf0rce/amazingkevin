@@ -8,8 +8,8 @@
 }
 
 img {
-  max-width: 50rem;
-  height: 50rem;
+  max-width: 80vw;
+  height: 50vh;
   padding: 0 15px;
   object-fit: cover;
 }
@@ -22,7 +22,7 @@ img:last-of-type {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 50rem;
+  height: 50vh;
 }
 
 .wrapper {

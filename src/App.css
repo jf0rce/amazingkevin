@@ -32,17 +32,17 @@ img:last-of-type {
 
 section {
   display: flex;
-  animation: swipe 25500 linear infinite backwards;
-  -webkit-animation: swipe 25500 linear infinite backwards;
+  animation: swipe 25500ms linear infinite backwards;
+  -webkit-animation: swipe 25500ms linear infinite backwards;
 
   animation-name: swipe;
-  animation-duration: 25500;
+  animation-duration: 25500ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-fill-mode: backwards;
 
   -webkit-animation-name: swipe;
-  -webkit-animation-duration: 25500;
+  -webkit-animation-duration: 25500ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: backwards;

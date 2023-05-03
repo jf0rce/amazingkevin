@@ -20,7 +20,7 @@ img:last-of-type {
 
 .inner {
   position: relative;
-  width: 100%;
+  width: 100vh;
   overflow: hidden;
   height: 50vh;
 }

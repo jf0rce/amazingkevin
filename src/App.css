@@ -8,7 +8,7 @@
 }
 
 img {
-  max-width: 80vw;
+  max-width: 75vw;
   height: 50vh;
   padding: 0 15px;
   object-fit: cover;
@@ -19,8 +19,8 @@ img:last-of-type {
 }
 
 .inner {
-  position: relative;
-  width: 100vh;
+  /* position: relative; */
+  width: 100%;
   overflow: hidden;
   height: 50vh;
 }
@@ -35,6 +35,7 @@ section {
   animation: swipe 25500ms linear infinite backwards;
   -webkit-animation: swipe 25500ms linear infinite backwards;
   -moz-animation: swipe 25500ms linear infinite backwards;
+  -o-animation: swipe 25500ms linear infinite backwards;
 
   animation-name: swipe;
   animation-duration: 25500ms;
@@ -53,6 +54,12 @@ section {
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
   -moz-animation-fill-mode: backwards;
+
+  -o-animation-name: swipe;
+  -o-animation-duration: 25500ms;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: backwards;
 }
 
 @keyframes swipe {
@@ -60,12 +67,14 @@ section {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   100% {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
   }
 }
 
@@ -74,12 +83,14 @@ section {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   100% {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
   }
 }
 
@@ -88,11 +99,29 @@ section {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   100% {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+
+@-o-keyframes swipe {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
   }
 }

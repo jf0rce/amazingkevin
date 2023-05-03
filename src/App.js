@@ -19,8 +19,10 @@ function App() {
   }));
 
   return (
-    <div className='App'>
-      <Banner images={images} speed={25500} />
+    <div style={{ display: 'block' }}>
+      <div className='App'>
+        <Banner images={images} speed={25500} />
+      </div>
     </div>
   );
 }
